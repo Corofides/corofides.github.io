@@ -37,7 +37,6 @@ const useFetch = (location) => {
     const response = getCachedResponse(location);
     console.log("useFetch", "Response", response);
 
-
     if (response.isValid) {
 
       setLoading(false);
@@ -46,9 +45,9 @@ const useFetch = (location) => {
 
     }
 
-    if (loading) {
+    /* if (loading) {
       return;
-    }
+    } */
 
     setLoading(true);
 
