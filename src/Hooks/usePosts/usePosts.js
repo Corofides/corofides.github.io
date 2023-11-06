@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import useFetch from '../useFetch';
+import useSettings from '../useSettings';
 
 const usePosts = () => {
 
-  const {result: cachedPosts, loading: cachedLoading} = useFetch('/Shimmer/posts/posts.json');
+  const {result: cachedPosts, loading: cachedLoading} = useFetch( process.env.REACT_APP_SITE_URL + '/posts/posts.json');
 
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -12,6 +13,7 @@ const usePosts = () => {
   useEffect(() => {
 
     console.log("GetCached", cachedLoading, cachedPosts);
+
 
     if (!cachedLoading) {
 
