@@ -1,0 +1,19 @@
+{
+  "site_name": "Shimmer",
+  "site_owner": "Corofides",
+  "brand-primary-bg": "#29C7AC",
+  "brand-primary-text": "#FFFFFF",
+  "brand-secondary-bg": "#8B6DDE",
+  "brand-secondary-text": "#FFFFFF",
+  "accent-bg": "#FFD700",
+  "accent-text": "#2E2E2E",
+  "neutral-bg": "#FFFFFF",
+  "neutral-text": "#2E2E2E",
+  "cta-bg": "#4A90E2",
+  "cta-text": "#FFFFFF",
+  "error-bg": "#FF6B6B",
+  "error-text": "#FFFFFF",
+  "highlight-bg": "#B19CD9",
+  "highlight-text": "#2E2E2E",
+  "dark-bg": "#2E2E2E"
+}

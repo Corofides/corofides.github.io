@@ -1,0 +1,33 @@
+@import '../../colours';
+
+
+.PostPreview {
+
+  &__Image, &__Info {
+    flex: 1;
+    box-sizing: border-box;
+  }
+
+  &__Info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__Published {
+    color: $crystal-white;
+    font-size: 14px;
+  }
+
+
+  /* &:first-of-type {
+    flex-direction: column;
+    background-color: $silent-midnight;
+    grid-area: main / 1 / 1 / 1;
+
+    .PostPreview__Image {
+      padding: 16px;
+    }
+
+  } */
+}

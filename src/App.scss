@@ -1,0 +1,19 @@
+@import 'colours';
+
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+.BlockPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 16px;
+  row-gap: 16px;
+  width: 100%;
+}
+
+* {
+  color: $elegant-gray;
+}

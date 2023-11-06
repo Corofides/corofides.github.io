@@ -1,0 +1,11 @@
+@import '../colours';
+
+.Post {
+
+  display: flex;
+  flex-direction: column;
+  //background-color: $elegant-gray;
+  color: $silent-midnight;
+  padding: 16px;
+
+}
