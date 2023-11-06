@@ -3,25 +3,7 @@
   "title": "Home",
   "widgets": [
     {"name": "Readme", "children": [], "colSpan": 3, "readmeUrl": "/Shimmer/pages/HomeAbout.md"},
-    {"name": "Accordion", "children": [], "colSpan": 3, "items": [
-      {
-        "title": "Versatility",
-        "content": "This project aims to be versatile in what it can power. Ranging from simple blogs and project pages to more advanced websites"
-      }, {
-        "title": "Ease of use",
-        "content": "The project aims to be easy to use for someone with limited programming knowledge. So long as they feel comfortable editing some markdown files and JSON they should be able to power a website using this."
-      }, {
-        "title": "Extensibility",
-        "content": "The project should be extendable. Simply dropping custom React widgets into the project you should be able to power new and custom widgets in the project. These widgets will have the full range of settings as a standard widget in the project"
-      }
-    ]},
-    {"name": "PostPreview", "children": [], "id": 1},
-    {"name": "PostPreview", "children": [], "id": 2},
-    {"name": "PostPreview", "children": [], "id": 3},
-    {"name": "PostPreview", "children": [], "id": 3},
-    {"name": "PostPreview", "children": [], "id": 3},
-    {"name": "Text", "children": ["This is my first CMS!"], "colSpan": 3},
-    {"name": "LatestPosts", "children": [], "colSpan": 3}
+    {"name": "PostArchive", "children": [], "colSpan": 3}
   ]
 }, {
   "location": "/posts",
