@@ -1,0 +1,21 @@
+[{
+  "location": "/",
+  "title": "Home",
+  "widgets": [
+    {"name": "Readme", "children": [], "colSpan": 3, "readmeUrl": "/Shimmer/pages/HomeAbout.md"},
+    {"name": "PostArchive", "children": [], "colSpan": 3}
+  ]
+}, {
+  "location": "/posts",
+  "title": "Posts",
+  "widgets": [
+    {"name": "Header", "children": ["Blog"], "colSpan": 3},
+    {"name": "PostArchive", "children": [], "colSpan": 3}
+  ]
+}, {
+  "location": "/posts/:id",
+  "title": "Post",
+  "widgets": [
+    {"name": "Post", "children": [], "colSpan": 3, "_id": ""}
+  ]
+}]
