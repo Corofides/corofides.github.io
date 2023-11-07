@@ -35,7 +35,7 @@ export default () => {
     <header {...headerRule} className={"Header"}>
       <div {...contentRule} className={"Content"}>
         <h1 {...siteNameRule} className={"SiteName"}>
-          <a {...siteNameRule} href={"/Shimmer"}>
+          <a {...siteNameRule} href={process.env.REACT_APP_SITE_URL}>
             {settings.site_name}
           </a>
         </h1>

@@ -2,7 +2,7 @@ import React from 'react';
 import {css} from "glamor";
 import useSettings from "../../../../Hooks/useSettings";
 
-const Loaded = ({id, published, name, author, image = false, ...props}) => {
+const Loaded = ({id, published, name, author, image = false, setRoute, ...props}) => {
 
   const {settings} = useSettings();
 
@@ -37,7 +37,11 @@ const Loaded = ({id, published, name, author, image = false, ...props}) => {
   });
 
   return (
-    <a href={process.env.REACT_APP_SITE_URL + "#posts/" + id} {...props} {...postPreviewRule} className={"PostPreview"}>
+    <a onClick={() => {
+
+      setRoute("/posts/" + id);
+
+    }} href={process.env.REACT_APP_SITE_URL + "#posts/" + id} {...props} {...postPreviewRule} className={"PostPreview"}>
       {image ? <div {...imageRule} className={"PostPreview__Image"} /> : null}
       <div className={"PostPreview__Info"}>
         <span {...subTextRule} className={"PostPreview__Published"}>{published}</span>
