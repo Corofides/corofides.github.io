@@ -37,7 +37,7 @@ const Loaded = ({id, published, name, author, image = false, ...props}) => {
   });
 
   return (
-    <a href={"/Shimmer#posts/" + id} {...props} {...postPreviewRule} className={"PostPreview"}>
+    <a href={process.env.REACT_APP_SITE_URL + "#posts/" + id} {...props} {...postPreviewRule} className={"PostPreview"}>
       {image ? <div {...imageRule} className={"PostPreview__Image"} /> : null}
       <div className={"PostPreview__Info"}>
         <span {...subTextRule} className={"PostPreview__Published"}>{published}</span>
