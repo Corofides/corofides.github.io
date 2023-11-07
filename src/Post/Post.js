@@ -11,7 +11,7 @@ export default ({post}) => {
 
   useEffect(() => {
 
-    fetch("/Shimmer/posts/" + post.file).then(response => response.text()).then((text) => {
+    fetch(process.env.REACT_APP_SITE_URL + "/posts/" + post.file).then(response => response.text()).then((text) => {
       console.log("Post", text);
       setMarkdown(text);
       setLoading(false);
