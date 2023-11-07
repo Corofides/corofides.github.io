@@ -16,6 +16,7 @@ jobs:
       contents: write
       packages: write
       repository-projects: write
+      issues: write
 
     steps:
       # To use this repository's private action, you must check out the repository
