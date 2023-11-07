@@ -14,7 +14,7 @@ const Post = ({id, ...props}) => {
 
 
   return (
-    <Readme readmeUrl={"/Shimmer/posts/" + post.file} {...props} />
+    <Readme readmeUrl={process.env.REACT_APP_SITE_URL + "/posts/" + post.file} {...props} />
   )
 
 };
