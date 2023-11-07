@@ -50,23 +50,18 @@ const usePages = () => {
   }, []);
 
   // Todo Revisit this as I don't like the way it works.
-  const getCurrentPage = () => {
+  const getCurrentPage = (route) => {
 
-    let currentUrl = "/";
-    const hashSplit = window.location.href.split('#');
 
-    if (hashSplit.length > 1) {
-      currentUrl += hashSplit[1];
-    }
 
     const page = pages.find(({location}) => {
 
       const pagePattern = new UrlPattern(location);
-      return pagePattern.match(currentUrl) !== null;
+      return pagePattern.match(route) !== null;
 
     });
 
-    const resultFromMatch = new UrlPattern(page.location).match(currentUrl);
+    const resultFromMatch = new UrlPattern(page.location).match(route);
 
     for (const key in resultFromMatch) {
 

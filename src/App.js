@@ -1,12 +1,14 @@
 import React from 'react';
 import Page from './Page';
 import usePages from './Hooks/usePages';
+import useRoute from './Hooks/useRoute';
 import Widgets from './Widgets';
 import './App.scss';
 
 function App() {
 
   const {loading, getCurrentPage} = usePages();
+  const {route, setRoute} = useRoute();
 
   if (loading) {
     return (
@@ -14,16 +16,23 @@ function App() {
     )
   }
 
-  const currentPage = getCurrentPage();
+  const currentPage = getCurrentPage(route);
 
   return (
     <div>
       <Page>
         <div className={"BlockPage"}>
           {currentPage.widgets.map(({name, children, ...other}) => {
+
             return (
-              <Widgets Cmp={name} {...other}>{children}</Widgets>
-            )
+              <Widgets
+                Cmp={name}
+                route={route}
+                setRoute={setRoute}
+                {...other}
+              >
+                {children}
+              </Widgets>);
           })}
         </div>
       </Page>
