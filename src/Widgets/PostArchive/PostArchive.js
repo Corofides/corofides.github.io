@@ -5,7 +5,7 @@ import { css } from 'glamor'
 
 const PostArchive = () => {
 
-  const {posts, loading} = usePosts();
+  const {posts, loading, publishedPosts} = usePosts();
 
   if (loading) {
     return (
@@ -17,19 +17,19 @@ const PostArchive = () => {
 
   const postArchiveRule = css({
     "display": "grid",
-    "grid-template-columns": "1fr 1fr 1fr",
-    "grid-template-rows": "auto",
-    "column-gap": "16px",
-    "row-gap": "16px",
+    "gridTemplateColumns": "1fr 1fr 1fr",
+    "gridTemplateRows": "auto",
+    "columnGap": "16px",
+    "rowGap": "16px",
     "width": "100%",
   });
 
   return (
     <div {...postArchiveRule}>
-      {posts.map(({id}) => {
+      {publishedPosts.map(({id}) => {
 
         return (
-          <PostPreview id={id} />
+          <PostPreview key={id} id={id} />
         )
 
       })}

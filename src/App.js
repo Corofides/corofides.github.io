@@ -22,10 +22,11 @@ function App() {
     <div>
       <Page>
         <div className={"BlockPage"}>
-          {currentPage.widgets.map(({name, children, ...other}) => {
+          {currentPage.widgets.map(({name, children, ...other}, index) => {
 
             return (
               <Widgets
+                key={index}
                 Cmp={name}
                 route={route}
                 setRoute={setRoute}

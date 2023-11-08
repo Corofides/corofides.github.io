@@ -8,24 +8,24 @@ export default () => {
 
   const footerRule = css({
     "padding": "16px",
-    "background-color": settings['dark-bg'],
+    "backgroundColor": settings['dark-bg'],
     "color": settings['brand-secondary-text'],
     "width": "100%",
     "position": "fixed",
     "bottom": 0,
-    "box-sizing": "border-box",
+    "boxSizing": "border-box",
   });
 
   const contentRule = css({
-    "max-width": "1920px",
+    "maxWidth": "1920px",
     "width": "100%",
     "margin": "0 auto",
     "display": "flex",
-    "justify-content": "space-between",
+    "justifyContent": "space-between",
   });
 
   const textRule = css({
-    "text-decoration": "none",
+    "textDecoration": "none",
     "color": settings['brand-secondary-text'],
   });
 

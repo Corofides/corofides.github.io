@@ -7,16 +7,16 @@ const Loading = () => {
   const {settings} = useSettings();
 
   const postPreviewRule = css({
-    "background-color": settings['brand-secondary-bg'],
+    "backgroundColor": settings['brand-secondary-bg'],
     "cursor": "pointer",
     "display": "flex",
-    "flex-direction": "row",
-    "min-height": "150px",
+    "flexDirection": "row",
+    "minHeight": "150px",
   });
 
   const subTextRule = css({
     "color": settings["brand-secondary-text"],
-    "background-color": settings['neutral-bg'],
+    "backgroundColor": settings['neutral-bg'],
     "opacity": 0.3,
     "height": "14px",
     "width": "100%",
@@ -24,17 +24,17 @@ const Loading = () => {
 
   const titleRule = css({
     "color": settings['brand-secondary-text'],
-    "background-color": settings['neutral-bg'],
+    "backgroundColor": settings['neutral-bg'],
     "margin": "auto 0 8px 0",
-    "font-size": "16px",
+    "fontSize": "16px",
     "height": "14px",
     "width": "100%",
     "opacity": "0.3",
   });
 
   const authorRule = css({
-    "margin-bottom": 0,
-    "margin-top": 0,
+    "marginBottom": 0,
+    "marginTop": 0,
   });
 
   return (

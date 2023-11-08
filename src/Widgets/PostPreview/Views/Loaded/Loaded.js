@@ -2,46 +2,42 @@ import React from 'react';
 import {css} from "glamor";
 import useSettings from "../../../../Hooks/useSettings";
 
-const Loaded = ({id, published, name, author, image = false, setRoute, ...props}) => {
+const Loaded = ({id, published, name, author, image = false, ...props}) => {
 
   const {settings} = useSettings();
 
   const postPreviewRule = css({
-    "background-color": settings['brand-secondary-bg'],
+    "backgroundColor": settings['brand-secondary-bg'],
     "cursor": "pointer",
     "display": "flex",
-    "flex-direction": "row",
-    "min-height": "150px",
+    "flexDirection": "row",
+    "minHeight": "150px",
   });
 
   const imageRule = css({
-    "background-color": settings['dark-bg'],
+    "backgroundColor": settings['dark-bg'],
     "position": "relative",
-    "min-width": "50%",
+    "minWidth": "50%",
   });
 
   const subTextRule = css({
     "color": settings["brand-secondary-text"],
-    "font-size": "14px;"
+    "fontSize": "14px"
   });
 
   const titleRule = css({
     "color": settings['brand-secondary-text'],
     "margin": "auto 0 0 0",
-    "font-size": "16px",
+    "fontSize": "16px",
   });
 
   const authorRule = css({
-    "margin-bottom": 0,
-    "margin-top": 0,
+    "marginBottom": 0,
+    "marginTop": 0,
   });
 
   return (
-    <a onClick={() => {
-
-      setRoute("/posts/" + id);
-
-    }} href={process.env.REACT_APP_SITE_URL + "#posts/" + id} {...props} {...postPreviewRule} className={"PostPreview"}>
+    <a href={process.env.REACT_APP_SITE_URL + "#posts/" + id} {...postPreviewRule} className={"PostPreview"}>
       {image ? <div {...imageRule} className={"PostPreview__Image"} /> : null}
       <div className={"PostPreview__Info"}>
         <span {...subTextRule} className={"PostPreview__Published"}>{published}</span>

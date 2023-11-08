@@ -11,8 +11,6 @@ const useSettings = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  console.log("useSettings", process.env);
-
   useEffect(() => {
 
     fetch(process.env.REACT_APP_SITE_URL + '/settings.json').then(response => response.json()).then((result) => {
