@@ -15,7 +15,7 @@ const Readme = ({readmeUrl, ...other}) => {
   });
 
   return (
-    <div {...other}>
+    <div>
       <Markdown className={"Readme"}>
         {readme}
       </Markdown>

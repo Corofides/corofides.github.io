@@ -17,20 +17,20 @@ const LatestPosts = ({header = "Latest Posts", total = 3, ...props}) => {
 
   const latestPostsRule = css({
     "display": "grid",
-    "grid-template-columns": "1fr 1fr 1fr",
-    "grid-template-rows": "auto",
-    "column-gap": "16px",
-    "row-gap": "16px",
+    "gridTemplateColumns": "1fr 1fr 1fr",
+    "gridTemplateRows": "auto",
+    "columnGap": "16px",
+    "rowGap": "16px",
     "width": "100%",
   });
 
   return (
-    <div {...props}>
+    <div>
       <h2>{header}</h2>
       <div {...latestPostsRule}>
         {posts.slice(0, total).map(({id}) => {
           return (
-            <PostPreview id={id} />
+            <PostPreview key={id} id={id} />
           )
         })}
       </div>

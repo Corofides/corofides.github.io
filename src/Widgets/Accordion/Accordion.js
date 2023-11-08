@@ -9,11 +9,11 @@ const Accordion = ({items, ...props}) => {
   const accordionTitle = css({
 
     "padding": "8px",
-    "background-color": "#767676",
+    "backgroundColor": "#767676",
     "color": "#fff",
     "cursor": "pointer",
     "margin": "0",
-    "border-bottom": "solid #fff 2px"
+    "borderBottom": "solid #fff 2px"
 
   });
 
@@ -44,11 +44,11 @@ const Accordion = ({items, ...props}) => {
   };
 
   return (
-    <div  {...props}>
+    <div>
       {items.map(({title, content}, index) => {
 
         return (
-          <div>
+          <div key={index}>
             <h3 onClick={() => {onSelect(index)}} {...accordionTitle}>{title}</h3>
             {open.includes(index) ? <div {...accordionContent}>{content}</div> : null}
           </div>
