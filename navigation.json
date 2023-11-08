@@ -1,0 +1,9 @@
+{
+  "main": [{
+    "label": "Home",
+    "location": "/"
+  }, {
+    "label": "About Me",
+    "location": "/about"
+  }]
+}

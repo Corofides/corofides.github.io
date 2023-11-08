@@ -18,4 +18,10 @@
   "widgets": [
     {"name": "Post", "children": [], "colSpan": 3, "_id": ""}
   ]
+}, {
+  "location": "/about",
+  "title": "About Me",
+  "widgets": [
+    {"name": "Readme", "children": [], "colSpan": 3, "readmeUrl": "/pages/AboutMe.md"}
+  ]
 }]
