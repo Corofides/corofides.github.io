@@ -6,5 +6,12 @@
     "file": "introducing_shimmer.md",
     "author": "Corofides",
     "id": 1
+  }, {
+    "name": "Playdate SDK and Lua",
+    "date_published": "2023-11-09T21:18:00",
+    "date_modified": "2023-11-09T21:18:00",
+    "file": "playdate_lua.md",
+    "author": "Corofides",
+    "id": 2
   }
 ]
