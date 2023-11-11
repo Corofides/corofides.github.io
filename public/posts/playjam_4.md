@@ -28,3 +28,8 @@ Square class as well and created a grid. I'm going to call it a night at this po
 
 ![alt text](
 https://corofides.github.io/images/two_cubes.png "First image, bit naff")
+
+## 09:00 12/11/23
+
+Well, I slept terribly last night. I was kind of hoping the late night would fix my actual sleeping issues but nope. Oh
+well. Anyway, going to try and work on this a bit before I make a shop trip for some essentials and snacks.
