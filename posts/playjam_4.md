@@ -26,3 +26,5 @@ Okay, so that started out terribly if I'm going to be honest. Not sure what was 
 playing ball. Anyway, managed to get sorted and I've got an isometric cube created that I can reuse. I added an Isometric
 Square class as well and created a grid. I'm going to call it a night at this point and pick it up tomorrow.
 
+![alt text](
+https://corofides.github.io/pages/images/two_cubes.png "First image, bit naff")
