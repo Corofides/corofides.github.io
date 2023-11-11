@@ -33,3 +33,11 @@ https://corofides.github.io/images/two_cubes.png "First image, bit naff")
 
 Well, I slept terribly last night. I was kind of hoping the late night would fix my actual sleeping issues but nope. Oh
 well. Anyway, going to try and work on this a bit before I make a shop trip for some essentials and snacks.
+
+## 09:56 12/11/23
+
+Okay, so I've done some more work and we now have resizable isometric cubes. As well as this they are now movable. For the
+time being I've just linked this to the kpad as an example.
+
+![alt text](
+https://corofides.github.io/images/resizeable_and_moveable.png "Has actual input..")
