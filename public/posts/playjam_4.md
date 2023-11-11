@@ -27,4 +27,4 @@ playing ball. Anyway, managed to get sorted and I've got an isometric cube creat
 Square class as well and created a grid. I'm going to call it a night at this point and pick it up tomorrow.
 
 ![alt text](
-https://corofides.github.io/pages/images/two_cubes.png "First image, bit naff")
+https://corofides.github.io/images/two_cubes.png "First image, bit naff")
