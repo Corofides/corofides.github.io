@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import usePosts from '../../Hooks/usePosts';
 import Readme from "../Readme/Readme";
+import HeroHeader from '../HeroHeader';
 
 const Post = ({id, ...props}) => {
 
@@ -14,7 +15,10 @@ const Post = ({id, ...props}) => {
 
 
   return (
-    <Readme readmeUrl={process.env.REACT_APP_SITE_URL + "/posts/" + post.file} {...props} />
+    <>
+      <HeroHeader title={post.name} subtitle={`By ${post.author}`}/>
+      <Readme readmeUrl={process.env.REACT_APP_SITE_URL + "/posts/" + post.file} {...props} />
+    </>
   )
 
 };
