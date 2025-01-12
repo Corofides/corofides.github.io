@@ -6,7 +6,7 @@ responses polluting the data.
 
 I ran the REST request five times to give me an idea of how long it was taking to respond.
 
-| Request Number | Time |
+| Request Number | Response Time |
 | -------------- | ---- |
 | 1 | 9.60s |
 | 2 | 9.12s |
@@ -97,7 +97,7 @@ $posts_transformed = array_map(function($post) {
 }, $posts);
 ```
 
-| Request Number | Time |
+| Request Number | Response Time |
 | -------------- | ---- |
 | 1 | 2.56s |
 | 2 | 2.60s |
@@ -178,7 +178,7 @@ if ($original_image_url && $image) {
 }
 ```
 
-| Request Number | Time |
+| Request Number | Response Time |
 | -------------- | ---- |
 | 1 | 621ms |
 | 2 | 610ms |
